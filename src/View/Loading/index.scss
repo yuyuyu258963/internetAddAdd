@@ -1,0 +1,113 @@
+a{
+  color: rgb(235, 184, 129);
+  outline: none !important;
+  border: none !important;
+}
+
+.view-loading{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../Static/back_picture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(10%); /* Chrome, Safari, Opera */
+  filter: grayscale(10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-loading__spinner{
+  background-color: rgba(40, 40, 40, 0.5);
+  width: 490px;
+  height: 400px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.view-loading__spinner__header{
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  flex: 2;
+}
+
+.view-loading input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: 0 0 0px 100px #283443 inset !important;
+}
+.view-loading input{
+  /* background: none; */
+  background-color: transparent;
+  border: none;
+  width: 230px;
+  margin-left: 55px ;
+  border-bottom: 2px solid black;
+  border-radius: 1px;
+  -webkit-text-fill-color: #9cc5ec;
+  transition: all 0.5s ease-in-out;
+}
+
+.view-loading-form > div{
+  margin-top: 20px;
+}
+
+.view-loading input:hover,
+.view-loading input:focus,
+.view-loading input:active,
+.view-loading input:valid{
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #9cc5ec;
+}
+.view-loading-form{
+  display: inline-block;
+  flex: 6;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: -35px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+.view-loading-form label{
+  font-size: 1em;
+  margin-right: 10px;
+  position: relative;
+  left: -230px;
+  transition: all 1s ease-in-out;
+}
+
+.view-loading-form div input:focus ~ label,
+.view-loading-form div input:valid ~ label{
+  top: -20px;
+}
+
+
+#checkMa{
+  width: 100px;
+  position: relative;
+  margin-left: -25px;
+}
+#imgVerify{
+  width: 300px;
+  height: 150px;
+  margin-left: 20px;
+}
+#bnt-submit{
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  color: gray;
+}
+
+#bnt-submit:hover{
+  box-shadow: 0px 0px 5px 3px rgba(27, 198, 217, 0.5);
+  border: 1px solid rgb(82, 190, 233);
+}

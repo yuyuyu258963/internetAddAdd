@@ -1,0 +1,7 @@
+.go-captcha-wrap{
+  width: 250px;
+
+}
+.go-captcha-wrap > div {
+  margin: 0 auto;
+}
